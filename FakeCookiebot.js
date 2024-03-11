@@ -31,6 +31,9 @@ if (typeof(window.Cookiebot) === "undefined")
         {
             var that = this;
 
+            /* getCookie and set Cookie heavily inspired by
+             * https://www.w3schools.com/js/js_cookies.asp
+             */
             function getCookie(cname)
             {
                 var name = cname + "=",
