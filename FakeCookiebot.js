@@ -64,7 +64,8 @@ if (typeof(window.Cookiebot) === "undefined")
                 var expires = "expires="+ d.toUTCString();
 
                 document.cookie = cname + "=" + cvalue
-                                + ";" + expires + ";path=/";
+                                + ";" + expires + ";path=/;"
+                                + "SameSite=Strict;Secure;";
             }
 
             var cookie = getCookie("fakeCookiebot");
